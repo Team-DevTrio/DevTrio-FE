@@ -17,11 +17,11 @@ export default function Hero() {
         fifthColor={indigo}
         pointerColor={indigo}
       >
-        <div className=" absolute z-50 inset-0 flex text-black pt-48  px-4 pointer-events-none text-3xl text-center flex-col gap-6 ">
-          <p className="bg-clip-text text-transparent drop-shadow-2xl text-black md:text-4xl lg:text-7xl font-bold">
+        <div className=" absolute z-50 inset-0 flex text-black pt-48 px-4 pointer-events-none text-3xl text-center flex-col gap-6 ">
+          <p className=" drop-shadow-2xl text-black md:text-4xl lg:text-7xl font-bold">
             Transforming Digital Visions into Reality
           </p>
-          <p className="relative text-lg text-center">
+          <p className=" text-lg text-center">
             Helping business owners and start-ups gain an unfair advantage
             through industry-leading, results-driven marketing websites
           </p>
