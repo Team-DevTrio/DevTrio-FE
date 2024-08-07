@@ -1,14 +1,20 @@
 "use client";
 import React from "react";
-import { TeamCarousel } from "./TeamCarousel";
 import Image from "next/image";
 import WhyChooseUs from "./WhyChooseUs";
+import { TbSteam } from "react-icons/tb";
+import { TeamCarousel } from "./TeamCarousel";
 
 export default function Team() {
   return (
     <div className="flex flex-col items-center px-4 md:px-8 lg:px-16">
       <h5 className="text-center text-5xl font-bold mt-8">The DevTrio team</h5>
-      <h5 className="text-center text-xl mb-4 font-normal pb-10">About us</h5>
+      <h5 className="text-center text-xl mb-4 font-normal pb-10 flex flex-row gap-3 items-center pt-5">
+      <TbSteam />
+      About us
+      <TbSteam />
+      </h5>
+
       <div className="flex flex-col lg:flex-row items-center gap-6 justify-center mb-8">
         <div className="relative w-full lg:w-1/3 h-96">
           <Image

@@ -8,14 +8,17 @@ import Team from "@/components/Team";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center px-4 ">
+    <div className="flex flex-col items-center justify-center bg-[rgb(248, 253, 251)]  ">
       <Hero />
       <HowCanWeHelp />
+      <div className="">
+
       <ProjectsSection />
+      </div>
       <div className="mt-32 mb-14">
         <Team />
       </div>
-      {/* <SayHi/> */}
+      <SayHi/>
     </div>
   );
 }

@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { PinContainer } from "./ui/3d-pin";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 type Employee = {
   name: string;
