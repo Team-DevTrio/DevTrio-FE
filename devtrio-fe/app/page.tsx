@@ -1,11 +1,17 @@
 import Hero from "@/components/Hero";
-import Team from "@/components/Team";
+import HowCanWeHelp from "@/components/HowCanWeHelp";
+import ProjectsSection from "@/components/ProjectSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
+//import Team from "@/components/Team";
 
 export default function Home() {
   return (
- <div>
-    <Hero/>
-    <Team/>
- </div>
+    <div className="flex flex-col items-center justify-center px-4 overflow-x-hidden">
+      <Hero />
+      {/* <Team/> */}
+      <HowCanWeHelp />
+      <ProjectsSection/>
+      <WhyChooseUs/>
+    </div>
   );
 }
