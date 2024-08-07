@@ -17,6 +17,7 @@ export default function Hero() {
         fourthColor={green}
         fifthColor={indigo}
         pointerColor={indigo}
+         className="max-w-screen-2xl"
       >
         <div className=" absolute z-50 inset-0 flex text-black pt-48 px-4 pointer-events-none text-3xl text-center flex-col gap-6 ">
           <p className=" drop-shadow-2xl text-black md:text-4xl lg:text-7xl font-bold">

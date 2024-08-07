@@ -16,19 +16,17 @@ export function TeamCarousel() {
       opts={{
         align: "start",
       }}
-      className="w-full "
+      className=" w-screen  max-w-screen-2xl"
     >
-      <CarouselContent className="gap-2">
+      <CarouselContent >
         {employeeList.map((employee) => (
-          <CarouselItem key={employee.id} className="md:basis-1/2 lg:basis-1/4">
-            <div className="p-1">
-              <EmployeeCard
-                name={employee.name}
-                description={employee.description}
-                imgSrc={employee.imgSrc}
-                url={employee.url}
-              />
-            </div>
+          <CarouselItem key={employee.id} className="md:basis-1/2 lg:basis-1/4 ">
+            <EmployeeCard
+              name={employee.name}
+              description={employee.description}
+              imgSrc={employee.imgSrc}
+              url={employee.url}
+            />
           </CarouselItem>
         ))}
       </CarouselContent>
