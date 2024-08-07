@@ -33,7 +33,7 @@ const projects: Project[] = [
 
 const ProjectsSection: React.FC = () => {
   return (
-    <div className="bg-secondary-400 p-1 mt-10">
+    <div className="bg-secondary-400 p-1 mt-10 ">
       <h2 className="text-5xl font-bold text-center mb-4 text-black">
         What we have done
       </h2>
@@ -66,7 +66,7 @@ const ProjectsSection: React.FC = () => {
                 index % 2 === 0 ? "justify-start" : "justify-end"
               }`}
             >
-              <div className="project-card flex flex-col justify-between h-full px-4 py-8">
+              <div className="project-card flex flex-col justify-between h-full px-4 py-8 ">
                 <div className="flex items-center mb-4">
                   <div className="w-full">
                     <div className="flex justify-between items-center project-title text-xl font-bold">
