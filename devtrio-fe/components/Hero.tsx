@@ -26,7 +26,7 @@ export default function Hero() {
             Helping business owners and start-ups gain an unfair advantage
             through industry-leading, results-driven marketing websites
           </p>
-        </div>{" "}
+        </div>
       </BackgroundGradientAnimation>
     </div>
   );

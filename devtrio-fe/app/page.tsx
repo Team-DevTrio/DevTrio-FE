@@ -1,14 +1,18 @@
 "use client"
 import Hero from "@/components/Hero";
-import Team from "@/components/Team";
+import HowCanWeHelp from "@/components/HowCanWeHelp";
+import ProjectsSection from "@/components/ProjectSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
+//import Team from "@/components/Team";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="flex flex-col items-center justify-center px-4 overflow-x-hidden">
       <Hero />
-      <div className="px-10">
-        <Team />
-      </div>
+      <HowCanWeHelp />
+      <ProjectsSection/>
+      <WhyChooseUs/>
+      <Team />
     </div>
   );
 }
