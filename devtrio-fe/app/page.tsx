@@ -1,5 +1,7 @@
 import Hero from "@/components/Hero";
 import HowCanWeHelp from "@/components/HowCanWeHelp";
+import ProjectsSection from "@/components/ProjectSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
 //import Team from "@/components/Team";
 
 export default function Home() {
@@ -8,6 +10,8 @@ export default function Home() {
       <Hero />
       {/* <Team/> */}
       <HowCanWeHelp />
+      <ProjectsSection/>
+      <WhyChooseUs/>
     </div>
   );
 }
