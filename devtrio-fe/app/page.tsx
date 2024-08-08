@@ -8,7 +8,7 @@ import Team from "@/components/Team";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center bg-[rgb(248, 253, 251)]  ">
+    <div className="flex flex-col items-center justify-center bg-[rgb(248, 253, 251)] overflow-x-hidden ">
       <Hero />
       <HowCanWeHelp />
       <div className="">
