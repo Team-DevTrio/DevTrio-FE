@@ -15,7 +15,7 @@ export default function Home() {
 
       <ProjectsSection />
       </div>
-      <div className="mt-32 mb-14">
+      <div className="mt-10 mb-10">
         <Team />
       </div>
       <SayHi/>
