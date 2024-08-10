@@ -44,7 +44,7 @@ const services: Service[] = [
 
 const HowCanWeHelp: React.FC = () => {
   return (
-    <div className="bg-secondary-400 p-1 mt-10">
+    <div className="bg-secondary-400 p-4 mt-10">
       <h2 className="text-5xl font-bold text-center mb-4 text-black">
         How Can We Help You?
       </h2>
