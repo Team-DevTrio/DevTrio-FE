@@ -31,7 +31,7 @@ export default function Hero() {
         fourthColor={green}
         fifthColor={indigo}
         pointerColor={indigo}
-        className="max-w-screen-2xl"
+        className="relative flex items-center justify-center h-full"
       >
         <div className="z-50 inset-0 flex text-black px-4  text-3xl text-center flex-col gap-6 ">
           <div className="flex flex-row">
@@ -42,9 +42,9 @@ export default function Hero() {
               height={50}
             />
           </div>
-          <div className="mt-48 ">
+          <div className="mt-10 mb-24 ">
             <p className=" drop-shadow-2xl text-black md:text-4xl lg:text-7xl font-bold pointer-events-none">
-              Transforming Digital Visions into Reality
+              Transforming Digital Visions Into Reality
             </p>
             <p className=" text-lg text-center pt-4 pointer-events-none">
               Helping business owners and start-ups gain an unfair advantage
@@ -60,7 +60,7 @@ export default function Hero() {
                 className="w-3/4 max-w-full h-auto rounded-xl"
                 autoPlay
                 muted={false}
-                loop
+         
               >
                 <source src="/videos/intro.mp4" type="video/mp4" />
                 <track

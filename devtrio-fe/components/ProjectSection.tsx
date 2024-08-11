@@ -4,7 +4,8 @@ import ProjectCardIcon from "@/public/images/projectCardIcon.png";
 import WorkSectionIcon from "@/public/images/WorkSection.png";
 
 import Project1 from "@/public/svgs/11.svg";
-import Project2 from "@/public/images/1111.png";
+import Project2 from "@/public/images/1111.svg";
+import Project3 from "@/public/images/safari.svg";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface Project {
@@ -21,15 +22,14 @@ const projects: Project[] = [
     subTitle:
       "The Online Golf League Platform allows golfers to register, submit gameplay videos, and compete in virtual tournaments. Using OpenCV for video analysis and Stripe for secure payments, it offers real-time leaderboards and fosters an engaging online community.",
     tags: [
-      "JavaScript",
-      "React.js",
+      "TypeScript",
+      "NextJS 14",
       "Tailwindcss",
-      "Redux",
-      "React Router",
       "Python",
       "Django",
       "MongoDB",
       "Stripe",
+      "ShadCn",
       "OpenCV",
     ],
     link: "#",
@@ -39,16 +39,25 @@ const projects: Project[] = [
     title: "StyleFusion",
     subTitle:
       "This app is a fabric selection tool that lets users choose various garment styles and preview combinations in real time. It integrates with Firebase for image storage and uses SQLite for local data management, allowing users to download their customized designs easily.",
-    tags: [
-      "Xamarin.Forms",
-      "C#",
-      "Firebase Storage",
-      "SQLite",
-      "XAML",
-      "Microsoft Visual Studio",
-    ],
+    tags: ["Xamarin.Forms", "C#", "Firebase Storage", "SQLite", "XAML"],
     link: "#",
     images: [Project2],
+  },
+  {
+    title: "Safari Expert",
+    subTitle:
+      "This website invites travelers to experience Kenya’s breathtaking wildlife through tailored safari packages. From witnessing the Great Migration to cultural immersions with local tribes, the site offers a seamless journey from trip planning to booking, ensuring an unforgettable African adventure.",
+    tags: [
+      "NextJs 14",
+      "Prime React",
+      "Framer Motion",
+      "Tailwindcss",
+      "TypeScript",
+      "React Hook Forms",
+      "Zod"
+    ],
+    link: "#",
+    images: [Project3],
   },
 ];
 
