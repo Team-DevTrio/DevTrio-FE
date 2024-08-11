@@ -2,15 +2,17 @@ import React from "react";
 import Image from "next/image";
 import ProjectCardIcon from "@/public/images/projectCardIcon.png";
 import WorkSectionIcon from "@/public/images/WorkSection.png";
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
+import Project1 from "@/public/svgs/11.svg";
+import Project2 from "@/public/images/1111.png";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface Project {
   title: string;
   subTitle: string;
   tags: string[];
   link: string;
-  images: any; // Add an images field for the carousel
+  images: any;
 }
 
 const projects: Project[] = [
@@ -31,7 +33,7 @@ const projects: Project[] = [
       "OpenCV",
     ],
     link: "#",
-    images: ["/path/to/image1.jpg", "/path/to/image2.jpg", "/path/to/image3.jpg"],
+    images: [Project1],
   },
   {
     title: "StyleFusion",
@@ -46,18 +48,34 @@ const projects: Project[] = [
       "Microsoft Visual Studio",
     ],
     link: "#",
-    images: ["/path/to/image4.jpg", "/path/to/image5.jpg"],
+    images: [Project2],
   },
 ];
 
 const ProjectsSection: React.FC = () => {
   return (
     <div className="bg-secondary-400 p-1 mt-10 ">
-      <h2 className="text-5xl font-bold text-center mb-4 text-black">What we have done</h2>
+      <h2 className="text-5xl font-bold text-center mb-4 text-black">
+        What we have done
+      </h2>
       <div className="flex justify-center items-center mb-10">
-        <Image src={WorkSectionIcon} alt="logo-lg" height="12" width="12" priority />
-        <h2 className="text-base font-normal text-center text-black mx-2">Our Work</h2>
-        <Image src={WorkSectionIcon} alt="logo-lg" height="12" width="12" priority />
+        <Image
+          src={WorkSectionIcon}
+          alt="logo-lg"
+          height="12"
+          width="12"
+          priority
+        />
+        <h2 className="text-base font-normal text-center text-black mx-2">
+          Our Work
+        </h2>
+        <Image
+          src={WorkSectionIcon}
+          alt="logo-lg"
+          height="12"
+          width="12"
+          priority
+        />
       </div>
 
       <div className="project-container">
@@ -88,7 +106,9 @@ const ProjectsSection: React.FC = () => {
                       <div className="flex-1">
                         <ul className="space-y-2 text-start">
                           {project.tags.map((tag, idx) => (
-                            <li key={idx} className="text-base text-black">{tag}</li>
+                            <li key={idx} className="text-base text-black">
+                              {tag}
+                            </li>
                           ))}
                         </ul>
                       </div>
@@ -102,34 +122,32 @@ const ProjectsSection: React.FC = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="project-card2 flex flex-col justify-between h-full px-4 py-8 mx-2">
-                    {/* <Carousel>
-                      <CarouselPrevious />
-                      <CarouselContent>
-                        {project.images.map((image, idx) => (
-                          <CarouselItem key={idx}>
-                            <Image src={image} alt={`Project image ${idx + 1}`} width={400} height={300} className="object-cover" />
-                          </CarouselItem>
-                        ))}
-                      </CarouselContent>
-                      <CarouselNext />
-                    </Carousel> */}
+                  <div className="project-card2 flex flex-col justify-between h-[600px] w-full max-w-[550px] mx-2 overflow-hidden">
+                    {project.images.map(
+                      (image: string | StaticImport, idx: number) => (
+                        <Image
+                          key={idx}
+                          src={image}
+                          alt={`Project image ${idx + 1}`}
+                          className="object-fit"
+                        />
+                      )
+                    )}
                   </div>
                 </>
               ) : (
                 <>
-                  <div className="project-card2 flex flex-col justify-between h-full px-4 py-8 mx-2">
-                    {/* <Carousel>
-                      <CarouselPrevious />
-                      <CarouselContent>
-                        {project.images.map((image, idx) => (
-                          <CarouselItem key={idx}>
-                            <Image src={image} alt={`Project image ${idx + 1}`} width={400} height={300} className="object-cover" />
-                          </CarouselItem>
-                        ))}
-                      </CarouselContent>
-                      <CarouselNext />
-                    </Carousel> */}
+                  <div className="project-card2 flex flex-col justify-between h-[600px] w-full max-w-[550px]mx-2 overflow-hidden">
+                    {project.images.map(
+                      (image: string | StaticImport, idx: number) => (
+                        <Image
+                          key={idx}
+                          src={image}
+                          alt={`Project image ${idx + 1}`}
+                          className="object-fit"
+                        />
+                      )
+                    )}
                   </div>
                   <div className="project-card flex flex-col justify-between h-full px-4 py-8 mx-2 ">
                     <div className="flex items-center mb-4">
@@ -153,7 +171,9 @@ const ProjectsSection: React.FC = () => {
                       <div className="flex-1">
                         <ul className="space-y-2 text-start">
                           {project.tags.map((tag, idx) => (
-                            <li key={idx} className="text-base text-black">{tag}</li>
+                            <li key={idx} className="text-base text-black">
+                              {tag}
+                            </li>
                           ))}
                         </ul>
                       </div>
