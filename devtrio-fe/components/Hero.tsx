@@ -21,7 +21,7 @@ export default function Hero() {
     return () => window.removeEventListener("click", handleInteraction);
   }, []);
   return (
-    <div className="h-auto ">
+    <div className=" ">
       <BackgroundGradientAnimation
         gradientBackgroundStart={"rgb(248, 253, 251)"}
         gradientBackgroundEnd={"rgb(248, 253, 251)"}
@@ -31,9 +31,9 @@ export default function Hero() {
         fourthColor={green}
         fifthColor={indigo}
         pointerColor={indigo}
-        className="max-w-screen-2xl "
+        className="max-w-screen-2xl"
       >
-        <div className=" absolute z-50 inset-0 flex text-black px-4  text-3xl text-center flex-col gap-6 ">
+        <div className="z-50 inset-0 flex text-black px-4  text-3xl text-center flex-col gap-6 ">
           <div className="flex flex-row">
             <Image
               src={"/svgs/DevTrioLogo.svg"}
@@ -42,7 +42,7 @@ export default function Hero() {
               height={50}
             />
           </div>
-          <div className="pt-48 ">
+          <div className="mt-48 ">
             <p className=" drop-shadow-2xl text-black md:text-4xl lg:text-7xl font-bold pointer-events-none">
               Transforming Digital Visions into Reality
             </p>
