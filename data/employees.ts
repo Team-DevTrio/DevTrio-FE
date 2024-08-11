@@ -4,7 +4,7 @@ export const employeeList = [
     name: "Mohamed Sihath Ali Maraikkar",
     description: "Founder & CEO",
     imgSrc: "/images/members/sihathx.png",
-    url: "https://www.linkedin.com/company/devtrio-uk/posts/?feedView=all",
+    url: "https://www.linkedin.com/in/sihatth/",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const employeeList = [
     name: "Isuru Jayasuriya",
     description: "Sofware Engineer",
     imgSrc: "/images/members/isuru.png",
-    url: "https://www.linkedin.com/company/devtrio-uk/posts/?feedView=all",
+    url: "https://www.linkedin.com/in/isuru-jayasuriya-ba86a8321/",
   },
   {
     id: 4,
